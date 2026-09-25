@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "context-checkpoint"
+version = "0.1.0"
+description = "Git-Style Deterministic Branching, Delta Caching & Time-Travel State for Long-Horizon Agent Contexts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Ahmed Hassan", email = "ahmed@example.com" }
+]
+keywords = [
+    "context-window",
+    "git-for-ai",
+    "prompt-caching",
+    "time-travel",
+    "claude-opus-5-5",
+    "gemini-3-8-flash",
+    "gpt-6-astra",
+    "ai-agents"
+]
+dependencies = []
+
+[project.scripts]
+context-checkpoint = "context_checkpoint.cli:main"
